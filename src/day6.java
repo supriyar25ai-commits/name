@@ -1,6 +1,6 @@
 
 
-
+/*
 class Car {
         String color;
         String brand;
@@ -42,7 +42,6 @@ class Car {
 class CarApp {
         public static void main(String[] args) {
                 Car myCar = new Car("Tesla", "Red", 30);
-
                 myCar.showFuel();
                 myCar.accelerate();
                 myCar.accelerate();
@@ -51,4 +50,119 @@ class CarApp {
                 myCar.showFuel();
         }
 }
+*/
+/*
+class Student {
+        String name;
+        String dept;
+        int regNo;
+        int maths = 0;
+        int physics = 0;
+        int chemistry = 0;
 
+        Student(String n, int r, String d) {
+                name = n;
+                regNo = r;
+                dept = d;
+        }
+        void setMaths(int m) {
+                maths = m;
+        }
+        void setPhysics(int p) {
+        physics = p;
+}
+        void setChemistry(int c) {
+                chemistry = c;
+        }
+        void updateMarks(int m) {
+                maths = m;
+        }
+        void updateMarks(int m, int p) {
+                maths = m;
+                physics = p;
+        }
+
+        void updateMarks(int m, int p, int c) {
+                maths = m;
+                physics = p;
+                chemistry = c;
+        }
+        void show(){
+                System.out.println(name + " " + regNo + " " + dept);
+                System.out.print
+
+        }
+
+
+}
+
+ *
+ */
+public class day6{
+        static class Student {
+                String name, dept;
+                int regNo;
+                int maths, physics, chemistry;
+
+                Student(String n, int r, String d) {
+                        name = n;
+                        regNo = r;
+                        dept = d;
+                }
+                int getMaths() {
+                        return maths;
+                }
+                int getPhysics() {
+                        return physics;
+                }
+
+                int getChemistry() {
+                        return chemistry;
+                }
+
+                void setMaths(int m) {
+                        maths = m;
+                }
+
+                void setPhysics(int p) {
+                        physics = p;
+                }
+
+                void setChemistry(int c) {
+                        chemistry = c;
+                }
+                void updateMarks(int m) {
+                        maths = m;
+                }
+
+                void updateMarks(int m, int p) {
+                        maths = m;
+                        physics = p;
+                }
+
+                void updateMarks(int m, int p, int c) {
+                        maths = m;
+                        physics = p;
+                        chemistry = c;
+                }
+
+                void show() {
+                        System.out.println(name + " " + regNo + " " + dept);
+                        System.out.println(maths + " " + physics + " " + chemistry);
+
+                }
+        }
+        public static void main(String[] args) {
+                Student s1 = new Student("supriya", 101, "ai");
+                Student s2 = new Student("thanya", 102, "ai&ds");
+                Student s3 = new Student("reymanth", 103, "mech");
+                s1.updateMarks(80, 85, 90);
+                s2.setMaths(70);
+                s2.setPhysics(75);
+                s2.setChemistry(65);
+                s3.updateMarks(88);
+                s1.show();
+                s2.show();
+                s3.show();
+        }
+}
