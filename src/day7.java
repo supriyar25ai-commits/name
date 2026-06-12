@@ -1,0 +1,51 @@
+
+class Request {
+    String name;
+     String date;
+     String reason;
+
+    Request(String name, String date, String reason) {
+        this.name = name;
+        this.date = date;
+        this.reason = reason;
+    }
+
+    void approve() {
+        System.out.println("Approved");
+    }
+
+    void reject() {
+        System.out.println("Rejected");
+    }
+}
+
+class LeaveRequest extends Request {
+    LeaveRequest(String name, String date, String reason) {
+        super(name, date, reason);
+    }
+}
+
+class OnDutyRequest extends Request {
+    OnDutyRequest(String name, String date, String reason) {
+        super(name, date, reason);
+    }
+}
+
+public class day7 {
+    public static void main(String[] args) {
+
+        LeaveRequest l = new LeaveRequest("supriya", "12-06-2026", "Sick Leave");
+        System.out.println(l.name + " " + l.date + " " + l.reason);
+        l.approve();
+
+        OnDutyRequest o = new OnDutyRequest("surya", "13-06-2026", "Workshop");
+        System.out.println(o.name + " " + o.date + " " + o.reason);
+        o.reject();
+    }
+}
+
+
+
+
+
+
