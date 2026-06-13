@@ -1,3 +1,7 @@
+import org.w3c.dom.ls.LSOutput;
+
+import java.net.SocketTimeoutException;
+import java.security.spec.RSAOtherPrimeInfo;
 
 class Request {
     String name;
@@ -87,45 +91,49 @@ public class day7 {
     }
 }
 
- */public class day7{
-    static class Payment{
-        int Amount;
-        void transfer(){
-            System.out.println("Amount is success");
-        }
-    }
-    static class UPIPayment extends Payment{
-        @Override
-        void transfer(){
-            System.out.println("UPIpayment is success");
-        }
-    }
-    static class CardPayment extends Payment{
-        @Override
-        void transfer(){
-            System.out.println("Cardpayment is success");
-        }
-    }
-    static class NBPayment extends Payment{
-        @Override
-        void transfer(){
-            System.out.println("NBpayment is success");
-        }
-    }
-    public static void main(String[] args) {
-        UPIPayment UPI=new UPIPayment();
-        UPI.transfer();
-        CardPayment Card=new CardPayment();
-        Card.transfer();
-        NBPayment NB=new NBPayment();
-        NB.transfer();
-        Payment Pay=new Payment();
-        Pay.transfer();
-    }
-}
+ */
 
+ public class day7 {
+     static class Payment {
+         int Amount;
 
+         void transfer() {
+             System.out.println("Amount is success");
+         }
+     }
 
+     static class UPIPayment extends Payment {
+         @Override
+         void transfer() {
+             System.out.println("UPIpayment is success");
+         }
+     }
+
+     static class CardPayment extends Payment {
+         @Override
+         void transfer() {
+             System.out.println("Cardpayment is success");
+         }
+     }
+
+     static class NBPayment extends Payment {
+         @Override
+         void transfer() {
+             System.out.println("NBpayment is success");
+         }
+     }
+
+     public static void main(String[] args) {
+         UPIPayment UPI = new UPIPayment();
+         UPI.transfer();
+         CardPayment Card = new CardPayment();
+         Card.transfer();
+         NBPayment NB = new NBPayment();
+         NB.transfer();
+         Payment Pay = new Payment();
+         Pay.transfer();
+     }
+ }
 
 
 
