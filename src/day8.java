@@ -1,11 +1,10 @@
-abstract class Employee {
-    String name;
-    int id;
-    int salary;
+public class day8 {
+     record courserecord(String dept,String name){
 
-    abstract void solveProblems();
-
-    void work() {
-        System.out.println(name + " is working");
-    }
+     }
+static void main(){
+         courserecord courserecord = new courserecord("ai","bsc cs");
+         System.out.println(courserecord.dept());
+         System.out.println(courserecord.name());
+     }
 }
