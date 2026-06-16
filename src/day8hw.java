@@ -1,4 +1,4 @@
-public class day9 {
+public class day8hw {
 
     sealed interface LoginResult
             permits LoginSuccess, LoginFailure, LoginLoading {
@@ -35,7 +35,7 @@ public class day9 {
                 new LoginFailure("Invalid Username or Password");
 
         LoginResult loginLoading =
-                new LoginLoading("Check after 5 hours");
+                new LoginLoading("  after 5 hours");
 
         handleLogin(loginSuccess);
         handleLogin(loginFailure);
