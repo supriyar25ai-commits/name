@@ -14,7 +14,12 @@ public class day10 {
         students.remove("Ram");
         System.out.println("\nAfter Removing Ram:");
         for (String s : students) {
-            System.out.println(s);
+            System.out.println(s);git init
+            git add README.md
+            git commit -m "first commit"
+            git branch -M main
+            git remote add origin https://github.com/supriyar25ai-commits/ai.git
+            git push -u origin main
         }
     }
 }
