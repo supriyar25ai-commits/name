@@ -81,7 +81,7 @@ public class day10 {
 }
 
      */
-/*
+
 import java.util.ArrayList;
 
 public class day10 {
@@ -99,9 +99,7 @@ public class day10 {
         while (list.size() > 1) {
             process(list);
         }
-    }
 
- */
     import java.util.LinkedList;
 public class Day10 {
     static void process(LinkedList<String> queue) {
