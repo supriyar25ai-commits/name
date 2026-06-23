@@ -25,6 +25,7 @@ public class day15 {
     static void main(){
         day15 factory = new day15();
         String type = "Credit";
-        gettransaction(factory,type).send(" 78095653","credited");
+        gettransaction(factory,type).send("78095653","credited");
     }
 }
+
